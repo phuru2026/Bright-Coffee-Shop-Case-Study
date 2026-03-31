@@ -1,5 +1,5 @@
 # Bright-Coffee-Shop-Case-Study
-In this assignment I will be conducting a study of Bright Coffee shop.
+In this assignment I will be conducting a study of Bright Coffee shop.This assignment is my stepping stone in my data analytics journey and after completing the assignment I hope to gain more experience with the data analytics tools such as Databricks (SQL), Miro, Canva, Github and Microsoft Excel.
 
 ### Project Description & Raw Data
 This folder includes original files that explains what the assignment is about, and the data that was used. Everything is in its original format and nothing was changed.
