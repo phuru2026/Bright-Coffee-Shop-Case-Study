@@ -118,6 +118,10 @@ Dayname(transaction_date) AS day_name,
 Monthname(transaction_date) AS month_name,
 ---add the third column
 Dayofmonth(transaction_date) AS day_of_month,
+---adding the fourth column
+SUM(unit_price*transaction_qty) AS total_revenue,
+---adding the fifth column
+AVG(unit_price*transaction_qty) AS average_revenue_per_category,
 
 CASE
     WHEN Dayname(transaction_date) = 'Saturday' THEN 'Weekend'
@@ -133,5 +137,17 @@ CASE
     WHEN date_format(transaction_time, 'HH:mm:ss') BETWEEN '07:00:00' AND '18:00:00' THEN 'Evening rush'
     ELSE 'Slow hours'
 END AS classification_of_time
-FROM `workspace`.`default`.`bright_coffee_shop_analysis_case_study_1_1`;
+FROM `workspace`.`default`.`bright_coffee_shop_analysis_case_study_1_1`
+GROUP BY transaction_id,
+       transaction_date,
+       transaction_time,
+       transaction_qty,
+       store_id,
+       store_location,
+       product_id,
+       unit_price,
+       product_category,
+       product_type,
+       product_detail;
+
     
