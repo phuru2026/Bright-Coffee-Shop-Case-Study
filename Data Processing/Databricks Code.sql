@@ -151,7 +151,7 @@ CASE
     WHEN date_format(transaction_time, 'HH:mm:ss') BETWEEN '10:59:59' AND '11:59:59' THEN 'Morning rush'
     WHEN date_format(transaction_time, 'HH:mm:ss') BETWEEN '12:00:00' AND '13:59:59' THEN 'Lunch rush'
     WHEN date_format(transaction_time, 'HH:mm:ss') BETWEEN '15:59:59' AND '16:59:59' THEN 'Afternoon rush'
-    WHEN date_format(transaction_time, 'HH:mm:ss') BETWEEN '07:00:00' AND '18:00:00' THEN 'Evening rush'
+    WHEN date_format(transaction_time, 'HH:mm:ss') BETWEEN '17:00:00' AND '18:00:00' THEN 'Evening rush'
     ELSE 'Slow hours'
 END AS classification_of_time
 FROM `workspace`.`default`.`bright_coffee_shop_analysis_case_study_1_1`
