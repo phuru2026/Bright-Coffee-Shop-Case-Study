@@ -36,7 +36,7 @@ Key Performance Indicators:
 3. Total Units Sold: measures demand for each product category
 
 
-- Time-Based
+- Time Based
 1. Peak Sales Periods: identifies high-traffic time intervals.
 2. Off-Peak (Low Sales) Periods: reveals opportunities for targeted promotions.
 3. Sales by Time of Day: compares performance across morning, afternoon, and evening.
